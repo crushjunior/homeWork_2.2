@@ -6,11 +6,26 @@ public class Human {
     String town;
     String job;
 
+    public Human(int yearOfBirth) {
+        this.name = "Информация не указана";
+        this.town = "Информация не указана";
+        this.job = "Информация не указана";
+        if (yearOfBirth < 0) {
+            this.yearOfBirth = 0;
+        } else {
+            this.yearOfBirth = yearOfBirth;
+        }
+    }
+
     public Human(String name, String town, String job, int yearOfBirth) {
         this.name = name;
         this.town = town;
         this.job = job;
-        this.yearOfBirth = yearOfBirth;
+        if (yearOfBirth < 0) {
+            this.yearOfBirth = 0;
+        } else {
+            this.yearOfBirth = yearOfBirth;
+        }
     }
 
     public void hello() {
