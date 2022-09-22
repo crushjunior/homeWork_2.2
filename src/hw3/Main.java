@@ -1,8 +1,8 @@
-package hw2;
+package hw3;
 
 public class Main {
     public static void main(String[] args) {
-        Human max = new Human("Аня", "Москва", "Методист образовательных программ", 1993);
+        Human max = new Human(-1);
         Human anya = new Human("Аня", "Москва", "Методист образовательных программ", 1993);
         Human katya = new Human("Катя", "Калининград", "Продакт-менеджер", 1994);
         Human artem = new Human("Артём", "Москва", "Директор по развитию бизнеса", 1995);
@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println();
 
-        Car lada = new Car("Lada", "Granta", 1.7, "Жёлтый", 2015, "Россия");
+        Car lada = new Car("Lada", "Granta", 1.7, 2015, "Россия");
         Car audi = new Car("Audi", "A8 50 L TDI quattro", 3.0, "Чёрный", 2020, "Германия");
         Car bmw = new Car("BMW", "Z8", 3.0, "Чёрный", 2021, "Германия");
         Car kia = new Car("KIA", "Sportage", 2.4, "Красный", 2018, "Южная Корея");
@@ -27,3 +27,5 @@ public class Main {
         hyundai.carInfo();
     }
 }
+
+
